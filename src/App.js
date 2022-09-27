@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import Bag from "./components/Bag";
+import ProductList from "./components/ProductList";
+import classes from "./App.module.css";
+import items from "./data/items.json";
+
+// const validateItem = (item) => {
+//   if(item===)
+// };
+
+// const prods = ['apple', 'orange'];
+
+// const checkout = (list) => {
+//   list.forEach(item => {
+//     const validatedItem = validateItem(item);
+//     if(!validatedItem) return;
+//   });
+// };
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className={classes.App}>
+			<header></header>
+			<main className={classes.appBody}>
+				<ProductList products={items} />
+				<Bag />
+			</main>
+			<footer></footer>
+		</div>
+	);
 }
 
 export default App;
