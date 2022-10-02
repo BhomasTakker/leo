@@ -7,6 +7,7 @@ git clone the repo
 run npm install
 npm start - to launch
 npm test - to run any test suite
+npm run test:watch - to run tests in watch/dev mode
 
 Step 1: Shopping cart
 You are building a checkout system for a shop which only sells apples and oranges.
@@ -29,3 +30,15 @@ i.e. I just haven't filled the functionality out
 
 It is the bag-context file that has the required logic
 src/context/bag-context.js
+
+Step 2: Simple offers
+The shop decides to introduce two new offers
+● buy one, get one free on Apples
+● 3 for the price of 2 on Oranges
+Update your checkout functions accordingly
+
+Completed the item validation from step 1
+Created some basic tests
+
+to run tests in watch mode so you can edit
+npm run test:watch
