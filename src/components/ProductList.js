@@ -20,7 +20,7 @@ const ProductList = ({ products }) => {
 	};
 
 	return (
-		<section>
+		<section className={classes.container}>
 			<h2>ProductList</h2>
 			<ul className={classes.products}>{createItems(products)}</ul>
 		</section>

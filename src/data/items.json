@@ -1,12 +1,14 @@
 [
 	{
-		"id": "1",
+		"id": 1,
 		"name": "apple",
-		"price": 0.6
+		"price": 0.6,
+		"img": "apple.png"
 	},
 	{
-		"id": "2",
+		"id": 2,
 		"name": "orange",
-		"price": 0.25
+		"price": 0.25,
+		"img": "orange.png"
 	}
 ]

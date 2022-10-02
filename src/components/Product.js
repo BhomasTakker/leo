@@ -1,15 +1,19 @@
 import formatter from "../utils/number-converter";
+import LEOButton from "./LEOButton";
+import classes from "./Product.module.css";
 
 const Product = ({ item, addItem, removeItem }) => {
-	const { id, name, price } = item;
-
+	const { id, name, price, img } = item;
 	return (
 		<li key={id}>
-			<article>
-				<h3>{name}</h3>
-				<p>{`£${formatter(price)}`}</p>
-				<button onClick={() => removeItem(item)}>-</button>
-				<button onClick={() => addItem(item)}>+</button>
+			<article className={classes.card}>
+				<img src={img} alt={`${name}`} />
+				<div className={classes.container}>
+					<h3>{name}</h3>
+					<p>{`£${formatter(price)}`}</p>
+					<LEOButton label="-" onClick={() => removeItem(item)} />
+					<LEOButton label="+" onClick={() => addItem(item)} />
+				</div>
 			</article>
 		</li>
 	);

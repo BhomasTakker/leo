@@ -1,0 +1,27 @@
+.card {
+	/* Add shadows to create the "card" effect */
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+	/* I don't think I've noticed this before - 
+  put a transition on an element then edit properties and watch it animate into your change!! */
+	transition: 0.3s;
+	margin-bottom: 1rem;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+	padding: 2px 1rem;
+}
+img {
+	width: 5rem;
+	height: 5rem;
+	margin: auto 0;
+}
